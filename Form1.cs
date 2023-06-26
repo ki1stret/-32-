@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace _3
 {
     public partial class Form1 : Form
     {
@@ -17,16 +17,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            string partBookTitle = "C#.советы";
-            string insertText = "Народные ";
-            string bookTitle = partBookTitle.Insert(3, insertText);
+            string bookTitle = "C#.Народные советы";
+            // Извлекаем подстроку с шестой позиции с размером в три символа
+            bookTitle = bookTitle.Substring(5, 3);
             MessageBox.Show(bookTitle);
         }
     }
