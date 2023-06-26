@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _3
+namespace _4
 {
     public partial class Form1 : Form
     {
@@ -19,10 +19,10 @@ namespace _3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string bookTitle = "C#.Народные советы";
-            // Извлекаем подстроку с шестой позиции с размером в три символа
-            bookTitle = bookTitle.Substring(5, 3);
-            MessageBox.Show(bookTitle);
+            string str1 = "кол";
+            string str2 = "Царь-колокол";
+            int i = str2.IndexOf(str1);
+            if (i >= 0) MessageBox.Show(str1 + " входит в строку " + str2);
         }
     }
 }
